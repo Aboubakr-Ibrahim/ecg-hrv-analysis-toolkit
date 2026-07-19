@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this toolkit, please cite it as below."
+authors:
+  - family-names: Ibrahim
+    given-names: Aboubakr
+title: "ECG & HRV Analysis Toolkit"
+version: 1.0.0
+date-released: 2026-07-19
+url: "https://github.com/Aboubakr-Ibrahim/ecg-hrv-analysis-toolkit"
+license: MIT
