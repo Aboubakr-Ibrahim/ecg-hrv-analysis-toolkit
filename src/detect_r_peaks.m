@@ -3,6 +3,10 @@ function [rPeaks, quality] = detect_r_peaks(ecg, fs, cfg)
 x = double(ecg(:));
 band = cfg.detectorBandHz;
 band(2) = min(band(2),0.90*fs/2);
+if band(1) >= band(2)
+    error('ECGHRV:SamplingRate', ...
+        'Sampling rate is too low for the configured detector passband.');
+end
 [b,a] = butter(2,band/(fs/2),'bandpass');
 z = filtfilt(b,a,x);
 envelope = movmean([0;diff(z)].^2,max(3,round(0.12*fs)));
