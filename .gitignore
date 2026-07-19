@@ -1,0 +1,14 @@
+*.asv
+*.autosave
+*.m~
+*.mex*
+slprj/
+codegen/
+data/*
+!data/README.md
+results/*
+!results/README.md
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
