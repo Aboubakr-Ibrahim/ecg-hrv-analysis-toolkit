@@ -10,6 +10,7 @@ cfg.refinementWindowSeconds = 0.08;
 cfg.nnRangeMs = [300 2000];
 cfg.localOutlierFraction = 0.20;
 cfg.frequencyResampleHz = 4;
+cfg.minFrequencyDurationSec = 300;
 cfg.lfBandHz = [0.04 0.15];
 cfg.hfBandHz = [0.15 0.40];
 cfg.triangularBinWidthMs = 7.8125;
